@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@keyframes opening {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/03/59/84/44/360_F_359844497_PHIyhUqdNiX084jhTKId70lGIl0UETTT.jpg");
+    animation: opening 1s ease-in-out forwards;
+
+}
+
+.heading{
+    text-align: center;
+    transform: translate(0,150%);
+    font-size: 55px;
+}
+.talk{
+    height: 50px;
+    width: 120px;
+    transform: translate(520%,200%);
+    font-size: 22px;
+    border-radius: 5px;
+}
+.content{
+    text-align: center;
+    transform: translate(0,250%);
+    font-size: 35px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.content2{
+    text-align: center;
+    transform: translate(0,250%);
+    font-size: 35px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media screen and (max-width:600px) 
+{
+    .talk{
+        
+        transform: translate(135%,200%);
+        font-size: 20px;
+        height: 40px;
+        width: 80px;
+        position: fixed;
+    }
+    .heading{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 40px;
+    }
+}
